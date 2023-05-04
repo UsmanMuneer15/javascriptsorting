@@ -10,10 +10,10 @@
     <h1>Sorting the arrays</h1>
     <script>
 
-        // let arr=[3,0,2,5,-1,4,1,10,23,15,20,12] ;
-        // console.log("unsorted array" ,arr);
-        // arr.sort((a,b) =>a-b);
-        // console.log("sorted array",arr);
+        let arr=[3,0,2,5,-1,4,1,10,23,15,20,12] ;
+        document.write("unsorted array" ,arr);
+        arr.sort((a,b) =>a-b);
+        document.write("sorted array",arr);
 
 
 
@@ -34,6 +34,7 @@
                 }
             }
             return QuickSort(left).concat(pivot,QuickSort(right));
+            // var unsortedArray=[3,0,2,5,-1,4,1,10,23,15,20,12];
             var sortedArray=QuickSort(unsortedArray);
             console.log(sortedArray.join(','));
         }
